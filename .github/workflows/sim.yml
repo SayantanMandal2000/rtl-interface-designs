@@ -3,7 +3,7 @@ name: Verilog Simulation
 on:
   push:
     paths:
-      - 'RTL_Handshake_Interface_Protocols/valid_ack_fsm_handshake/**'
+      - 'rtl-interface-designs/valid_ack_fsm_handshake/tb/'
   pull_request:
 
 jobs:
@@ -19,6 +19,6 @@ jobs:
 
       - name: Run Simulation
         run: |
-          cd RTL_Handshake_Interface_Protocols/valid_ack_fsm_handshake/tb
-          iverilog -o handshake_tb.vvp ../src/*.v handshake_tb.v
+          cd rtl-interface-designs/valid_ack_fsm_handshake/tb
+          iverilog -o handshake_tb.vvp rtl-interface-designs/valid_ack_fsm_handshake/tb/handshake_tb.v
           vvp handshake_tb.vvp
