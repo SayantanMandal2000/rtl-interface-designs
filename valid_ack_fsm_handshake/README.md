@@ -39,7 +39,8 @@ This project implements a **valid/acknowledge (valid-ack)** handshaking protocol
 
 ## 📊 FSM Diagrams
 
-![FSM Diagram](docs/fsm_master_slave.png)
+![FSM Diagram](valid_ack_fsm_handshake/docs/HandShakeSlave_FSM.png)
+![FSM Diagram](valid_ack_fsm_handshake/docs/HandShakeMaster_FSM.png).
 
 - **Master FSM:** `IDLE → SEND → WAIT_ACK → IDLE`
 - **Slave FSM:** `S_IDLE → S_WAIT → S_ACK → S_IDLE`
@@ -50,7 +51,7 @@ FSM source: [`docs/fsm_master_slave.dot`](docs/fsm_master_slave.dot)
 
 ## ⏱️ Waveform Preview
 
-![Waveform](docs/waveform.png)
+![Waveform](docs/HandShakewaveform.png)
 
 - Captured using Xilinx Vivado
 - Shows valid/ack signals and corresponding data flow
