@@ -1,0 +1,24 @@
+name: Verilog Simulation
+
+on:
+  push:
+    paths:
+      - 'RTL_Handshake_Interface_Protocols/valid_ack_fsm_handshake/**'
+  pull_request:
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Icarus Verilog
+        run: sudo apt-get install -y iverilog
+
+      - name: Run Simulation
+        run: |
+          cd RTL_Handshake_Interface_Protocols/valid_ack_fsm_handshake/tb
+          iverilog -o handshake_tb.vvp ../src/*.v handshake_tb.v
+          vvp handshake_tb.vvp
