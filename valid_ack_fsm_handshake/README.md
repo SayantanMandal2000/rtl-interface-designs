@@ -51,7 +51,7 @@ FSM source: [`docs/fsm_master_slave.dot`](docs/fsm_master_slave.dot)
 
 ![Waveform](docs/waveform.png)
 
-- Captured using GTKWave
+- Captured using Xilinx Vivado
 - Shows valid/ack signals and corresponding data flow
 
 ---
