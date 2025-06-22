@@ -5,6 +5,7 @@
 ![Build: Simulated](https://img.shields.io/badge/build-simulated-green)
 ![Waveform: Vivado](https://img.shields.io/badge/waveform-Vivado-blue)
 ![FSM: Implemented](https://img.shields.io/badge/FSM-Implemented-red)
+![CI](https://github.com/SayantanMandal2000/rtl-interface-designs/blob/main/.github/workflows/sim.yml/badge.svg).
 
 This project implements a **valid/acknowledge (valid-ack)** handshaking protocol using **Finite State Machines (FSMs)** in Verilog. It is inspired by AXI-Stream-style interfaces, where a master transfers data when `valid` is asserted, and the slave responds by asserting `ack` after a simulated delay.
 
