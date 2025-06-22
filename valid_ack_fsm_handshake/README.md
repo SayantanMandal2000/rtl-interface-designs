@@ -39,7 +39,7 @@ This project implements a **valid/acknowledge (valid-ack)** handshaking protocol
 
 ## 📊 FSM Diagrams
 
-![FSM Diagram](valid_ack_fsm_handshake/docs/HandShakeSlave_FSM.png)
+![FSM Diagram](https://github.com/SayantanMandal2000/rtl-interface-designs/blob/main/valid_ack_fsm_handshake/docs/HandShakeMaster_FSM.png).
 ![FSM Diagram](valid_ack_fsm_handshake/docs/HandShakeMaster_FSM.png).
 
 - **Master FSM:** `IDLE → SEND → WAIT_ACK → IDLE`
