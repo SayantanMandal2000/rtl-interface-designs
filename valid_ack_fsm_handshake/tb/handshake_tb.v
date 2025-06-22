@@ -6,8 +6,6 @@ module handshake_tb();
     reg [7:0] data_in;
     wire [7:0] data_out;
     
-    wire ack;
-    
     handshake_top dut(
         .clk(clk),
         .rstn(rstn),
