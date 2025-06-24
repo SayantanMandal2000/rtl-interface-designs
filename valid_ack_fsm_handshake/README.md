@@ -3,7 +3,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Language: Verilog](https://img.shields.io/badge/language-Verilog-yellow.svg)
 ![Build: Simulated](https://img.shields.io/badge/build-simulated-green)
-![Waveform: Vivado](https://img.shields.io/badge/waveform-Vivado-blue)
+![Waveform: Vivado](https://img.shields.io/badge/waveform-GTKwave-blue)
 ![FSM: Implemented](https://img.shields.io/badge/FSM-Implemented-red)
 ![CI](https://github.com/SayantanMandal2000/rtl-interface-designs/blob/main/.github/workflows/sim.yml/badge.svg).
 
